@@ -520,7 +520,7 @@ def write_payload(out_dir: Path, base_name: str,
                   tag: str, idx: int,
                   data: bytes) -> tuple[Path, str, str, str]:
     """
-    Deep-classify data, write to disk with the correct extension.
+    Deep classify data, write to disk with the correct extension.
     Returns (out_path, label, short_tag, ext).
     """
     label, short_tag, ext = classify_blob(data)
