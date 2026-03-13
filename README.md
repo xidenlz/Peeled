@@ -104,7 +104,7 @@ The extracted payloads (if any) go into a folder called `target.exe.extracted` r
 
 ---
 
-## how pe type detection works
+## how PE type detection works
 
 When it finds an mz/pe blob it doesn't guess based on the file name or extension. it reads two fields directly out of the pe headers:
 
