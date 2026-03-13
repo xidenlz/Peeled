@@ -29,7 +29,7 @@ no third-party libraries. just python 3.10 and the standard library.
 
 | category | formats |
 |----------|---------|
-| pe binaries | .exe (gui / cui), .dll, .sys (kernel driver), .efi (all 4 subtypes), pe32 vs pe32+ |
+| PE binaries | .exe (gui / cui), .dll, .sys (kernel driver), .efi (all 4 subtypes), pe32 vs pe32+ |
 | images | png, jpeg, gif (87a / 89a), bmp, tiff, ico, cur, webp |
 | archives | zip, 7z, rar (v4 / v5), gzip, bzip2, xz, ms cabinet |
 | documents | pdf (with version), ooxml (docx / xlsx / pptx), legacy ole2 office |
