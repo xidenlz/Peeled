@@ -16,9 +16,9 @@ no third-party libraries. just python 3.10 and the standard library.
 
 - Detects embedded files hiding in the pe overlay (data appended after the last section)
 - Walks the full resource directory tree and flags anything that shouldn't be there
-- Deep-classifies every blob it finds using magic bytes and pe header fields, not just the file extension
+- Deep classifies every blob it finds using magic bytes and pe header fields, not just the file extension
 - Tells you exactly what kind of pe file something is: exe, dll, kernel driver (.sys), or efi binary
-- Sub-classifies riff containers into wav, avi, webp, animated cursors, etc
+- Sub classifies riff containers into wav, avi, webp, animated cursors, etc
 - Extracts and saves flagged payloads to a `.extracted` folder next to the target file
 - Colored terminal output that works on windows (cmd, powershell), linux and macos
 - Falls back to plain text automatically when piping output to a file
