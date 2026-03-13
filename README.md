@@ -1,10 +1,16 @@
-# Peeled 🔍
+<!-- Header -->
+<div align="center">
+<h1>Peeled 🔍</h1>
+</div>
 
-![python](https://img.shields.io/badge/python-3.10%2B-blue?style=flat-square&logo=python&logoColor=white)
-![platform](https://img.shields.io/badge/platform-windows%20%7C%20linux%20%7C%20macos-lightgrey?style=flat-square)
-![license](https://img.shields.io/badge/license-MIT-green?style=flat-square)
-![status](https://img.shields.io/badge/status-active-brightgreen?style=flat-square)
-![zero deps](https://img.shields.io/badge/dependencies-none-orange?style=flat-square)
+<!-- Badges -->
+<p align="center">
+  <img src="https://img.shields.io/badge/python-3.10%2B-blue?style=flat-square&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/platform-windows%20%7C%20linux%20%7C%20macos-lightgrey?style=flat-square" />
+  <img src="https://img.shields.io/badge/license-MIT-green?style=flat-square" />
+  <img src="https://img.shields.io/badge/status-active-brightgreen?style=flat-square" />
+  <img src="https://img.shields.io/badge/dependencies-none-orange?style=flat-square" />
+</p>
 
 a lightweight PE analysis tool that detects and extracts embedded payloads from windows executables. it inspects the file overlay and resource section, deep classifies every blob it finds (exe, dll, sys, efi, png, wav, zip and more), and dumps anything suspicious to disk with the correct file extension.
 i wrote this because i needed a quick static analysis pass to decide if a file was even worth my time before going deeper and this thing makes that call fast. not like other tools that make you wait around. you get an immediate read on what's hiding inside a binary, so you're not burning time reversing something that turns out to be nothing.
