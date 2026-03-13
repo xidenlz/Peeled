@@ -6,7 +6,7 @@
 ![status](https://img.shields.io/badge/status-active-brightgreen?style=flat-square)
 ![zero deps](https://img.shields.io/badge/dependencies-none-orange?style=flat-square)
 
-a lightweight PE analysis tool that detects and extracts embedded payloads from windows executables. it inspects the file overlay and resource section, deep-classifies every blob it finds (exe, dll, sys, efi, png, wav, zip and more), and dumps anything suspicious to disk with the correct file extension.
+a lightweight PE analysis tool that detects and extracts embedded payloads from windows executables. it inspects the file overlay and resource section, deep classifies every blob it finds (exe, dll, sys, efi, png, wav, zip and more), and dumps anything suspicious to disk with the correct file extension.
 i wrote this because i needed a quick static analysis pass to decide if a file was even worth my time before going deeper and this thing makes that call fast. not like other tools that make you wait around. you get an immediate read on what's hiding inside a binary, so you're not burning time reversing something that turns out to be nothing.
 no third-party libraries. just python 3.10 and the standard library.
 
