@@ -50,7 +50,7 @@ no third-party libraries. just python 3.10 and the standard library.
 ```
 python peeled.py target.exe
 ```
-or download the latest release from [here](https://github.com/xidenlz/Peeled/releases/tag/v1.0.0) 
+for windows you can download the latest release from [here](https://github.com/xidenlz/Peeled/releases/tag/v1.0.0) 
 ```
 peeled.exe target.exe
 ```
