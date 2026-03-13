@@ -62,41 +62,35 @@ The extracted payloads (if any) go into a folder called `target.exe.extracted` r
   ╚═╝     ╚══════╝╚══════╝╚══════╝╚══════╝╚═════╝
 
   PE Embedded Payload Detector & Extractor
-  github.com/xdenlz · MIT License
+  github.com/xdenlz  ·  MIT License
 
 ────────────────────────────────────────────────────────────────
   TARGET
 ────────────────────────────────────────────────────────────────
-  File:  suspect.exe
-  Path:  C:\Users\Musaed\Desktop\suspect.exe
-  Size:  2,451,230 bytes
-  Type:  .exe  EXE — Windows GUI [PE32+]
+  File: file.dll
+  Path: C:\Users\Musaed\Desktop\Analysis\My Scripts\output\file.dll
+  Size: 15,872 bytes
+  Type: .dll  DLL — Windows GUI [PE32+]
 
 ────────────────────────────────────────────────────────────────
   OVERLAY
 ────────────────────────────────────────────────────────────────
-  Size:  312,440 bytes
-  +0x00254a10  [PE/MZ]  →  .dll  DLL — Windows GUI [PE32+]
+  No overlay present.
 
 ────────────────────────────────────────────────────────────────
   RESOURCES
 ────────────────────────────────────────────────────────────────
-  Entries scanned: 14
-  type=10  size=891,392  [PE/MZ]  →  .sys  Kernel Driver [PE32+]
+  No resource section / empty.
 
 ────────────────────────────────────────────────────────────────
   VERDICT
 ────────────────────────────────────────────────────────────────
-  [!] Embedded payload: LIKELY
-      · overlay (312,440 bytes) — DLL at +0x00254a10
-      · resource type=10 size=891,392 — Kernel Driver at blob+0x00
+  [=] Embedded payload: NOT CONFIRMED
+      No overlay-with-magic / resource-with-magic / large RCDATA.
+
+  [=] No extractable payloads found to dump.
 
 ────────────────────────────────────────────────────────────────
-  EXTRACTED
-────────────────────────────────────────────────────────────────
-  Output dir: C:\Users\Musaed\Desktop\suspect.exe.extracted
-  +  .dll     DLL — Windows GUI [PE32+]         suspect.overlay.001.dll.dll
-  +  .sys     Kernel Driver [PE32+]             suspect.res10.001.sys.sys
 ```
 
 ---
@@ -170,6 +164,3 @@ Tested on windows 10/11 (cmd and powershell), ubuntu 22.04, and macos 14.
 
 ---
 
-## license
-
-Mit. do whatever you want with it, just keep the header.
